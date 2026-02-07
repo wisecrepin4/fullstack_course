@@ -40,7 +40,8 @@ $(".btn").on("click", function () {
   } else {
     gamePattern = [];
     level = 0;
-    g;
+    let sound = new Audio("sounds/wrong.mp3");
+    sound.play();
     $("h1").text("Game over place any key to start");
     started = false;
   }
